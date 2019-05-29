@@ -196,7 +196,7 @@ def getAges(bridgeSurveyYear, builtSurveyYearBuilt):
 
 
 def categorizeBridgesByADT(ADT): 
-    """ returns A list of class of the bridge as define by Author in so and so """
+    """ returns a list of class of the bridges with respect to ADT """
     class_of_bridges_adt = []
     for adt in ADT:
         if adt < 100:

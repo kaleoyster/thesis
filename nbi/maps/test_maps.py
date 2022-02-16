@@ -46,9 +46,9 @@ class TestMaps(unittest.TestCase):
         input_code_0  =  0   # Other
         input_code_5  =  5   # HS 20
 
-        self.assertEqual(code_NA[input_code_NA], 'NA')
+        self.assertEqual(code_NA[input_code_NA], "")
         self.assertEqual(code_0[input_code_0], 'Other')
-        self.assertEqual(code_5[input_code_5], 'HS 20')
+        self.assertEqual(code_5[input_code_5], 'HS ')
 
 
     def owner_essential(self):
@@ -72,7 +72,7 @@ class TestMaps(unittest.TestCase):
     def type_of_wearing(self):
         type_wearing = maps.type_of_wearing_surface
         
-        self.assertEqual(len(type_wearing), 12)
+        self.assertEqual(len(type_wearing), 2)
         
         # INPUT
         self.assertEqual(type_wearing[1], "Monolithic Concrete (concurrently placed with structural deck)") 
